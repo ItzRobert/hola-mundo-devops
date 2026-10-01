@@ -5,8 +5,7 @@ on:
     branches:
       - main
 
-
-      jobs:
+jobs:
   hola-mundo:
     runs-on: ubuntu-latest
 
@@ -17,8 +16,7 @@ on:
       - name: Ejecutar Hola Mundo
         run: node index.js
 
-        
-   - name: Enviar notificacion a ntfy
+      - name: Enviar notificacion a ntfy
         run: |
           curl -d "Nuevo codigo subido a main - GitHub Actions ejecutado correctamente" \
-          https://ntfy.sh/devops-itla
+            https://ntfy.sh/devops-itla
